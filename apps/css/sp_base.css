@@ -1,0 +1,259 @@
+@charset "utf-8";
+/*--京sp_base.css--*/
+/*##### PC First #####*/
+@media screen and (max-width: 479px) {
+/* 479px以下用（スマートフォン用）の記述 */
+/*--------SPここから--------*/
+/*SP版ではborder-boxへ*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: auto;
+	min-width: inherit;
+}
+#sb-site {
+	box-shadow: 5px 0 10px -1px rgba(0,0,0,0.2);
+}
+
+/*#####mobile_nav_button#####*/
+#mobile_nav_button {
+	position: fixed;
+	top: 0;
+	right: 5px;
+	z-index: 9999;
+	width: 50px;
+	height: 45px;
+	padding-top: 5px;
+	background: #0055A2;
+}
+
+	#mobile_nav_button span {
+		color: #fff;
+		display: block;
+		text-align: center;
+	}
+
+	#mobile_nav_button span.mnb_icon {
+		font-size: 1.2em;
+	}
+
+	#mobile_nav_button span.mnb_txt {
+		font-size: 0.8em;
+	}
+
+.mb_lang_changer ul{
+	letter-spacing:-0.4em;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+	.mb_lang_changer ul li{
+		display:inline-block;
+		letter-spacing:0em;
+		margin-right:10px;
+	}
+
+	.mb_lang_changer ul li:last-child{
+		margin-right:0;
+	}
+
+	.mb_lang_changer ul li a{
+		color:#888;
+	}
+
+	.mb_lang_changer ul li.active a{
+		color:#C53515;
+	}
+
+/*#####mobile_nav#####*/
+#mobile_nav {
+	background: #fff;
+}
+	#mobile_nav_inner {
+		padding: 10px 0;
+	}
+		#mobile_nav_inner .close_menu {
+			padding: 15px 0;
+			text-align: center;
+		}
+			.close_menu_btn {
+				display: inline-block;
+				padding: 3px 10px;
+				background: rgba(0,51,51,0.3);
+				border-radius: 4px;
+				color: #fff;
+			}
+			.close_menu_btn:before {
+				font-family: FontAwesome;
+				content: "\f00d";
+				margin: 0 5px 0 0;
+			}
+		#mobile_nav_inner .spg_nav {
+			padding: 0;
+		}
+			#mobile_nav_inner .spg_nav > li {
+				border-bottom: 1px solid #ccc;
+				padding: 5px 5px 5px 13px;
+			}
+			#mobile_nav_inner .spg_nav > li:first-child {
+				border-top: 1px solid #ccc;
+			}
+			#mobile_nav_inner .spg_nav > li:before {
+				font-family: FontAwesome;
+				content: "\f111";
+				margin-right: 3px;
+				color: #217346;
+				display: inline-block;
+				font-size: 10px;
+				position: relative;
+				top: -1px;
+				left: 0;
+			}
+			#mobile_nav_inner .spg_nav > li.spgnav_home {
+				padding-left: 7px;
+			}
+			#mobile_nav_inner .spg_nav > li.spgnav_home:before {
+				content: "\f015";
+				margin-right: 1px;
+				font-size: 18px;
+				top: 1px;
+				left: 0;
+			}
+			#mobile_nav_inner .spg_nav > li.spgnav_contact {
+				padding-left: 10px;
+			}
+			#mobile_nav_inner .spg_nav > li.spgnav_contact:before {
+				content: "\f0e0";
+				margin-right: 1px;
+				font-size: 14px;
+				top: 0px;
+				left: 0;
+			}
+				#mobile_nav_inner .spg_nav li a {
+					color: #222;
+				}
+				#mobile_nav_inner .spg_nav > li > a {
+					font-weight: bold;
+					display: inline-block;
+					padding: 3px;
+				}
+					#mobile_nav_inner .spg_nav > li > ul {
+						margin-left: 14px;
+					}
+						#mobile_nav_inner .spg_nav > li > ul li {
+							border-bottom: 1px dotted #ccc;
+							padding: 5px 5px 5px 14px;
+						}
+						#mobile_nav_inner .spg_nav > li > ul li:last-child {
+							border-bottom: 0;
+						}
+						#mobile_nav_inner .spg_nav > li > ul li:first-child {
+							border-top: 1px dotted #ccc;
+						}
+						#mobile_nav_inner .spg_nav > li > ul li:before {
+							font-family: FontAwesome;
+							content: "\f105";
+							margin-right: 5px;
+							margin-left: -9px;
+						}
+
+/*#####header#####*/
+#header{
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	padding:10px;
+}
+
+	#ku_logo{
+		padding:0;
+		width:12%;
+		height:auto;
+	}
+
+	#site_title{
+		padding:0;
+		width:54%;
+		height:auto;
+	}
+
+
+/*#####footer#####*/
+#footer{
+	padding-top:20px;
+}
+
+#footer_inner{
+	width:auto;
+	margin-bottom:20px;
+}
+
+	#f_address{
+		width:auto;
+		float:none;
+	}
+
+	#f_address .f_ku_logo{
+		text-align:center;
+	}
+
+	#f_address .f_ku_logo img.img-responsive{
+		display:inline-block;
+	}
+
+	#f_address dl{
+		text-align:center;
+	}
+
+#policy_copyright{
+	width:auto;
+	padding:10px 0;
+}
+
+	#policy{
+		width:auto;
+		float:none;
+		text-align:center;
+	}
+
+	#copyright{
+		float:none;
+		text-align:center;
+		width:auto;
+		padding:10px 0;
+	}
+
+
+
+#pagetop {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 9999;
+}
+
+	#pagetop a{
+		display:block;
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		line-height:50px;
+		background:#0055A2;
+	}
+
+
+/*--------SPここまで--------*/
+}

@@ -1,0 +1,165 @@
+/* general */
+
+[role=tooltip] {color: #4d4d4d !important;}
+.plone-toolbar-left #edit-zone {z-index: 1000 !important;}
+.rich-editor iframe {width: 100% !important;}
+.slide-preview {color: #ffffff !important;}
+.visual-clear {clear: both;}
+
+/* @@unmodified-list */
+
+.template-unmodified-list dd {margin: 20px;}
+.template-unmodified-list .list-item {float: left; margin-right: 20px;}
+.template-unmodified-list .list-item .checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-left: 1px;
+}
+
+/* Contents Type Icon */
+
+.contenttype-kumafolder::before,
+.contenttype-kumaslidefolder::before,
+.contenttype-kumapickupfolder::before,
+.contenttype-kumapublicationfolder::before { content: '\e801'; }
+.contenttype-kumatop::before,
+.contenttype-kumapage::before,
+.contenttype-kumaslide::before,
+.contenttype-kumapickup::before,
+.contenttype-kumapublication::before,
+.contenttype-kumacategory::before { content: '\e80e'; }
+.contenttype-file::before { content: '\e811'; }
+.contenttype-link::before { content: '\e806'; }
+.contenttype-image::before { content: '\e810'; }
+.contenttype-collection::before { content: '\e808'; }
+.contenttype-kumaevent::before { content: '\e809'; }
+.contenttype-mailform::before { content: '\e80f'; }
+
+
+/* TinyMCE Full Screen */
+.mce-fullscreen {z-index: 1000;}
+
+/* Workflow State Color */
+.state-private {color: #EC0000 !important;}
+.state-draft, .state-draft_rep {color: #0CF !important;}
+.state-review, .state-review_rep {background-color: #E7FF5C !important; color: #009245 !important;}
+/*.label-state-published, .state-published {color: #666666;}*/
+.state-waiting, .state-waiting_rep {color: #F39 !important;}
+/*.state-hidden {color: #F60 !important; text-decoration: line-through !important;}*/
+.state-trash {
+  background-color: #4D4D4D!important;
+  color:#FFF !important;
+  font-weight:bold !important;
+  text-decoration: line-through !important;
+}
+.state-archived {
+  background-color: orange !important;
+  color:#FFF !important;
+  font-weight:bold !important;
+  text-decoration: line-through !important;
+}
+
+#unmodified-start-date,
+#unmodified-end-date {
+  height: 100%;
+}
+
+/* 雛形用 */
+#index-template ul li {list-style-type: none;}
+#index-template ul {margin-bottom: 0}
+
+.portalMessage.warn {
+  background-color: #F2F5A9;
+  border: 1px solid #F4FA58;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* reCa */
+.g-recaptcha {margin-bottom: 30px;}
+
+/* Search */
+.moshikashite {
+  background-color: #f7f7f7;
+  padding:10px;
+  margin-bottom: 20px;
+}
+.moshikashite li {
+  float:left;
+  margin-right: 20px;
+}
+
+/* Plone Marge */
+
+body, h1, h2, h3, h4, h5, h6 {
+  line-height: 1.8;
+}
+
+select#created_query,
+select#sort,
+._sub-nav1 ul li select {
+  height: auto !important;
+  color: black;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.gsc-search-box table > tbody > tr > td {
+  border: none;
+}
+
+table.e-form-table,
+._snippets-event-calender ._table {
+  border: none !important;
+  border-top: 1px solid #ddd !important;
+  color: black;
+}
+
+table.e-form-table > tbody > tr > th,
+table.e-form-table > tbody > tr > td,
+._snippets-event-calender table > tbody > tr > th,
+._snippets-event-calender table > tbody > tr > td {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.c-keyword-search__body input[type="text"] {
+  height: auto !important;
+}
+
+#content {
+  margin-bottom: 0px;
+}
+
+.gsib_a {
+  padding: 0 !important;
+}
+
+.gsc-input-box > table {
+  border: none;
+}
+
+/* Unmodified List 20180813 */
+
+.font10 {
+  font-size: 10px;
+}
+
+.link-to-private-reps {
+  margin: 0 0 20px 20px;
+}
+
+.link-to-private-reps a {
+  color: #fe2e2e;
+}
+
+.template-unmodified-list dd {
+  padding: 10px;
+  background-color: #e8e8e8;
+}
+
+/* Language Selector */
+
+.l-header-nav-sp ._list2--2column li {width: 33% !important;}
+.l-header-nav-sp ._list2--2column li a {padding: 12px 6px 14px 18px !important;}

@@ -1,0 +1,492 @@
+@charset "utf-8";
+@import url("reset.css");
+@import url("bootstrap-print.css");
+/*--京base.css--*/
+html{
+	overflow-x:visible;
+}
+body{
+	-webkit-font-smoothing: antialiased;
+	font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif ;
+	background: #fff;
+	font-size: 14px;
+	overflow-x: auto;/* ipad対策 */
+	min-width: 1000px;/* ipad対策 */
+}
+
+/*PC版ではborder-boxではcontent-boxへ*/
+* {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+*:before,
+*:after {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+#container{
+	border-top:5px solid #348bf2;
+}
+
+	/*#####header#####*/
+	#header{
+		width:960px;
+		height:110px;
+		margin:0 auto;
+	}
+
+		#ku_logo{
+			width:56px;
+			height:56px;
+			padding:16px 0 0 0;
+			float:left;
+			margin-right:20px;
+		}
+
+		#site_title{
+			width:224px;
+			height:50px;
+			padding:22px 0 0 0;
+			float:left;
+		}
+
+		#h_etc{
+			width:580px;
+			float:right;
+			padding-top:10px;
+		}
+
+			.header_nav1{
+				width:516px;
+				margin:0 0 8px 64px;
+			}
+
+				.header_nav1 ul{
+					letter-spacing:-0.4em;
+				}
+
+				.header_nav1 ul li{
+					letter-spacing:0;
+					display:inline-block;
+					width:129px;
+					height:25px;
+				}
+
+				.header_nav1 ul li a{
+					display:block;
+					width:129px;
+					height:25px;
+					position:relative;
+					color:#111;
+					text-align:center;
+					text-decoration:none;
+				}
+
+				.header_nav1 ul li a:after{
+					content:"";
+					display:block;
+					height:2px;
+					width:100%;
+					background:#e5e5e5;
+					position:absolute;
+					bottom:0;
+					left:0;
+				}
+
+				.header_nav1 ul li a:hover:after{
+					background:#f46401;
+				}
+
+			.nav_search_lang{}
+
+				.header_nav2{
+					float:left;
+					margin-right:30px;
+					padding:8px 0 0 0;
+				}
+
+					.header_nav2 ul{
+						letter-spacing:-0.4em;
+					}
+
+					.header_nav2 ul li{
+						background:url(../shared/tri_01.gif) no-repeat left 2px;
+						padding-left:12px;
+						font-size:0.9em;
+						display:inline-block;
+						letter-spacing:0;
+						margin-right:20px;
+					}
+
+					.header_nav2 ul li:last-child{
+						margin-right:0;
+					}
+
+					.header_nav2 ul li a{
+						color:#111;
+					}
+
+				.header_search{
+					float:left;
+				}
+
+					.header_search .search_input{
+						width:152px;
+						float:left;
+						margin-right:5px;
+					}
+
+						.header_search .search_input input[type="text"]{
+							width:140px;
+							height:22px;
+							padding:0 5px;
+							font-size:0.95em;
+						}
+
+					.header_search .search_submit{
+						float:left;
+					}
+
+					.header_search .search_submit input[type="submit"]{
+						background:#348bf2;
+						border:0;
+						width:40px;
+						height:26px;
+						font-family: FontAwesome;
+						color:#fff;
+					}
+
+				.lang_changer{
+					float:right;
+				}
+
+					.lang_changer a{
+						display:block;
+						width:100px;
+						height:26px;
+						line-height:26px;
+						text-align:center;
+						background:#b4b4b4;
+						color:#fff;
+						text-decoration: none;
+					}
+
+
+
+	/*#####global_nav#####*/
+	#global_nav{
+		width:960px;
+		height:32px;
+		margin:0 auto 15px auto;
+		clear:both;
+	}
+
+		#global_nav > ul{
+			letter-spacing:-0.4em;
+			text-align:center;
+		}
+
+		#global_nav > ul > li{
+			display:inline-block;
+			letter-spacing:0;
+			position:relative;
+			border-left:1px solid #ccc;
+			padding:0 22px;
+		}
+
+		#global_nav > ul > li:last-child{
+			border-right:1px solid #ccc;
+		}
+
+		#global_nav > ul > li > a{
+			display:block;
+			height:32px;
+		}
+
+		#global_nav > ul > li > a img{
+			opacity:1;
+			transition:all .5s ease;
+		}
+
+		#global_nav > ul > li > a:hover img,
+		#global_nav > ul > li.active > a img{
+			opacity:0;
+		}
+
+		#global_nav > ul > li:nth-child(1) > a {
+			background:url(../shared/g_nav01_on.gif) no-repeat;
+		}
+
+		#global_nav > ul > li:nth-child(2) > a {
+			background:url(../shared/g_nav02_on.gif) no-repeat;
+		}
+
+		#global_nav > ul > li:nth-child(3) > a {
+			background:url(../shared/g_nav03_on.gif) no-repeat;
+		}
+
+		#global_nav > ul > li:nth-child(4) > a {
+			background:url(../shared/g_nav04_on.gif) no-repeat;
+		}
+
+		#global_nav > ul > li:nth-child(5) > a {
+			background:url(../shared/g_nav05_on.gif) no-repeat;
+		}
+
+		#global_nav > ul > li:nth-child(6) > a {
+			background:url(../shared/g_nav06_on.gif) no-repeat;
+		}
+
+		#global_nav > ul > li:nth-child(7) > a {
+			background:url(../shared/g_nav07_on.gif) no-repeat;
+		}
+
+		#global_nav > ul > li:nth-child(8) > a {
+			background:url(../shared/g_nav08_on.gif) no-repeat;
+		}
+
+	/*#####footer#####*/
+	#footer{
+		clear:both;
+		padding:40px 0 0 0;
+		border-top:20px solid #f2f5fa;
+	}
+
+		#footer_inner{
+			width:960px;
+			margin:0 auto;
+		}
+
+		#f_address{
+			width: 270px;
+			float:left;
+			padding-top:10px;
+		}
+
+			#f_address .f_ku_logo{
+				margin-bottom:15px;
+			}
+
+			#f_address dl dt{
+				font-size:1.05em;
+				margin-bottom:10px;
+			}
+
+			#f_address dl dd{
+				font-size:0.9em;
+			}
+
+		#f_nav{
+			float:right;
+		}
+
+			#f_nav1{
+				height:74px;
+				margin-bottom:30px;
+			}
+
+				#f_nav1 ul{
+					letter-spacing:-0.4em;
+				}
+
+				#f_nav1 ul li{
+					letter-spacing:0;
+					border-right:1px solid #ccc;
+					height:74px;
+					float:left;
+					padding:0 18px;
+				}
+
+				#f_nav1 ul li:last-child{
+					border-right:none;
+					padding:0 0 0 18px;
+				}
+
+				#f_nav1 ul li.f_ku_logo{
+					padding:14px 18px 15px 18px;
+					height:45px;
+				}
+
+				#f_nav1 ul li a{
+					display:block;
+				}
+
+				#f_nav1 ul li a .f_nav_icon{
+					display:block;
+					padding-top:10px;
+					text-align:center;
+					margin-bottom:10px;
+				}
+
+				#f_nav1 ul li a .f_nav_txt{
+					display:block;
+					font-size:0.9em;
+					color:#111;
+				}
+
+			#f_nav2{
+				font-size:0.9em;
+			}
+
+				#f_nav2 ul{
+					text-align:right;
+					letter-spacing:-0.4em;
+				}
+
+				#f_nav2 ul li{
+					letter-spacing:0;
+					display:inline-block;
+					margin-right:20px;
+				}
+
+				#f_nav2 ul li:last-child{
+					margin-right:0;
+				}
+
+				#f_nav2 ul li a{
+					color:#111;
+				}
+
+	#policy_copyright{
+		clear:both;
+		width:940px;
+		margin:0 auto;
+		font-size:0.9em;
+		padding:25px 10px;
+		border-top:1px solid #ccc;
+		overflow:hidden;
+	}
+
+		#policy{
+			width:200px;
+			float:left;
+		}
+
+			#policy a{
+				color:#111;
+			}
+
+		#copyright{
+			width:740px;
+			float:right;
+			text-align:right;
+		}
+
+
+
+#pagetop {
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 9999;
+}
+
+	#pagetop a{
+		display:block;
+		width: 70px;
+		height: 70px;
+		border-radius:35px;
+		background:#0055A2;
+		color:#fff;
+		font-size:32px;
+		line-height:70px;
+		transition:.5s all ease;
+	}
+
+	#pagetop a:hover{
+		opacity:0.9;
+	}
+
+	.sp_search{
+		overflow:hidden;
+		text-align:center;
+		margin:0 0 10px 0;
+	}
+
+		.sp_search .search_input{
+			width:122px;
+			margin-right:5px;
+			display:inline-block;
+		}
+
+			.sp_search .search_input input[type="text"]{
+				width:120px;
+				height:26px;
+			}
+
+		.sp_search .search_submit{
+			display:inline-block;
+		}
+
+		.sp_search .search_submit input[type="submit"]{
+			background:#348bf2;
+			border:0;
+			width:60px;
+			height:26px;
+			color:#fff;
+		}
+
+
+@media print{
+	/*印刷時に意図せず表示される、されない対策*/
+	#mobile_nav_button.visible-xs-block.hidden-sm.hidden-md.hidden-lg,
+	#mobile_nav.visible-xs-block.hidden-sm.hidden-md.hidden-lg ,
+	#site_title img.img-responsive.visible-xs-inline.hidden-sm.hidden-md.hidden-lg ,
+	#sp_home_nav.visible-xs-block.hidden-sm.hidden-md.hidden-lg ,
+	#home_catch2 > #home_catch2_inner > .box_header > h2 span.visible-xs-inline.hidden-sm.hidden-md.hidden-lg ,
+	br.visible-xs-inline.hidden-sm.hidden-md.hidden-lg ,
+	#sp_page_title.visible-xs-block.hidden-sm.hidden-md.hidden-lg ,
+	#sub_nav.visible-xs-block.hidden-sm.hidden-md.hidden-lg ,
+	#news_category.visible-xs-block.hidden-sm.hidden-md.hidden-lg
+	{
+		display:none !important;
+	}
+	#global_nav.hidden-xs.visible-sm-block.visible-md-block.visible-lg-block ,
+	#site_title img.img-responsive.hidden-xs.visible-sm-inline.visible-md-inline.visible-lg-inline ,
+	#f_nav_l.hidden-xs.visible-sm-block.visible-md-block.visible-lg-block ,
+	#f_nav_s.hidden-xs.visible-sm-block.visible-md-block.visible-lg-block ,
+	#home_catch2 > #home_catch2_inner > .box_header > h2 img.hidden-xs.visible-sm-inline.visible-md-inline.visible-lg-inline ,
+	#sub_nav.hidden-xs.visible-sm-block.visible-md-block.visible-lg-block ,
+	#news_category.hidden-xs.visible-sm-block.visible-md-block.visible-lg-block
+	{
+		display: inherit !important;
+	}
+
+}
+
+
+/*########## 汎用 ##########*/
+
+/*文字色*/
+.fc_red {color:red;}
+.fc_blue {color:#0000ff;}
+.fc_gray {color:gray;}
+.fc_orange{color:orange;}
+
+/*フォントスタイル*/
+.fw_bold{font-weight:bold;}
+
+/*揃え*/
+.ta_center{text-align:center;}
+.ta_right{text-align:right;}
+.ta_left{text-align:left;}
+
+/*フロート*/
+.fl_right{float:right;}
+.fl_left, .alignleft{float:left;}
+.fl_clear{clear:both;}
+
+/*画像の場合のフロートの追加指定*/
+img.alignleft{
+	margin-right:20px;
+}
+
+/*フォントサイズ（Em）適宜追加*/
+.fsem085{font-size:0.85em;}
+.fsem09{font-size:0.9em;}
